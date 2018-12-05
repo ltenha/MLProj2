@@ -21,5 +21,4 @@ Intermediate csv files
 application.csv
 train_agg.csv
 
-final csv file with visitorId and predicted revenue
-submission_rf.csv
+
