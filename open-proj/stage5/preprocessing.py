@@ -279,9 +279,7 @@ def allinone():
     train_agg_corr = train_agg.corr()
 
     #CORRELATION CHECK
-#Now that we've gotten the data all cleaned up, let's see what kind of signal is in this data set out of the box!
-#You will see pageviews / hits are strongest correlations to the revenue the customer spends.
-#Intuitively this makes sense: if they click around the site more, it's more likely it will end up in a transaction
+#if they click around the site more, it's more likely it will end up in a transaction
     print(train_agg_corr['TARGET'].sort_values(ascending = False))
     train_agg.to_csv('application.csv')
     test_agg.to_csv('test_agg.csv')
